@@ -399,7 +399,7 @@ require get_template_directory() . '/inc/theme-options.php';
  * Custom Social Links Widget
  */
 class Yoko_SocialLinks_Widget extends WP_Widget {
-	function Yoko_SocialLinks_Widget() {
+	public function __construct() {
 		$widget_ops = array(
 		'classname' => 'widget_social_links',
 		'description' => __('Link to your social profiles like twitter, facebook or flickr.', 'yoko'));
