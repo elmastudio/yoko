@@ -6,6 +6,11 @@ For a detailed documentation and support please visit: http://www.elmastudio.de/
 Changelog:
 ------------------------------------------------------------------------------------------------------------
 
+Version 1.2.8 - 20th August 2026
+-----------------------------------
+- Remove the Delicious and Foursquare options from the Yoko Social Links widget.
+  Delicious shut down in 2017 and Foursquare split off its consumer app in 2014.
+
 Version 1.2.7 - 20th August 2026
 -----------------------------------
 - Remove the Google+ option from the Yoko Social Links widget. Google+ shut down in April 2019.

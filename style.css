@@ -5,7 +5,7 @@ Author: Elmastudio
 Author URI: https://www.elmastudio.de/en/
 Description: Yoko is a modern three-column blog theme. A responsive layout optimizes the theme for mobile devices like tablet pcs and modern smartphones (the layout switches to a two- or one-column layout depending on the screen size the theme is viewed on). To make your blog post more flexible you can use different kinds of post formats such as gallery, image, video, aside, link or quotes. To customize the theme you can choose your own background, link color, logo and header image. Yoko also comes with a custom social links widget and shortcodes for text columns, info boxes and highlighted text.
 
-Version: 1.2.7
+Version: 1.2.8
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: yoko
@@ -1114,9 +1114,6 @@ aside.widget ul li:last-child {
 .widget_sociallinks a.github {
 	background:url(images/socialicons.png) 0 -153px no-repeat;
 }
-.widget_sociallinks a.foursquare {
-	background:url(images/socialicons.png) 0 -170px no-repeat;
-}
 .widget_sociallinks a.wordpress {
 	background:url(images/socialicons.png) 0 -187px no-repeat;
 }
@@ -1125,9 +1122,6 @@ aside.widget ul li:last-child {
 }
 .widget_sociallinks a.linkedin {
 	background:url(images/socialicons.png) 0 -221px no-repeat;
-}
-.widget_sociallinks a.delicious {
-	background:url(images/socialicons.png) 0 -238px no-repeat;
 }
 .widget_sociallinks a.rss {
 	background:url(images/socialicons.png) 0 -255px no-repeat;
@@ -1610,10 +1604,6 @@ a#cancel-comment-reply-link {
 	background:url(images/x2/socialicons.png) 0 -153px no-repeat;
 	background-size: 16px 271px;
 }
-.widget_sociallinks a.foursquare {
-	background:url(images/x2/socialicons.png) 0 -170px no-repeat;
-	background-size: 16px 271px;
-}
 .widget_sociallinks a.wordpress {
 	background:url(images/x2/socialicons.png) 0 -187px no-repeat;
 	background-size: 16px 271px;
@@ -1624,10 +1614,6 @@ a#cancel-comment-reply-link {
 }
 .widget_sociallinks a.linkedin {
 	background:url(images/x2/socialicons.png) 0 -221px no-repeat;
-	background-size: 16px 271px;
-}
-.widget_sociallinks a.delicious {
-	background:url(images/x2/socialicons.png) 0 -238px no-repeat;
 	background-size: 16px 271px;
 }
 .widget_sociallinks a.rss {
