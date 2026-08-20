@@ -422,14 +422,8 @@ class Yoko_SocialLinks_Widget extends WP_Widget {
 		$dribbble_url = empty($instance['dribbble_url']) ? ' ' : apply_filters('widget_dribbble_url', $instance['dribbble_url']);
 		$github_title = empty($instance['github_title']) ? ' ' : apply_filters('widget_github_title', $instance['github_title']);
 		$github_url = empty($instance['github_url']) ? ' ' : apply_filters('widget_github_url', $instance['github_url']);
-		$wordpress_title = empty($instance['wordpress_title']) ? ' ' : apply_filters('widget_wordpress_title', $instance['wordpress_title']);
-		$wordpress_url = empty($instance['wordpress_url']) ? ' ' : apply_filters('widget_wordpress_url', $instance['wordpress_url']);
-		$xing_title = empty($instance['xing_title']) ? ' ' : apply_filters('widget_xing_title', $instance['xing_title']);
-		$xing_url = empty($instance['xing_url']) ? ' ' : apply_filters('widget_xing_url', $instance['xing_url']);
 		$linkedin_title = empty($instance['linkedin_title']) ? ' ' : apply_filters('widget_linkedin_title', $instance['linkedin_title']);
 		$linkedin_url = empty($instance['linkedin_url']) ? ' ' : apply_filters('widget_linkedin_url', $instance['linkedin_url']);
-		$rss_title = empty($instance['rss_title']) ? ' ' : apply_filters('widget_rss_title', $instance['rss_title']);
-		$rss_url = empty($instance['rss_url']) ? ' ' : apply_filters('widget_rss_url', $instance['rss_url']);
 
 		if ( !empty( $title ) ) { echo $before_title . $title . $after_title; };
 		echo '<ul>';
@@ -442,10 +436,7 @@ class Yoko_SocialLinks_Widget extends WP_Widget {
 		if($flickr_title == ' ') { echo ''; } else {  echo  '<li class="widget_sociallinks"><a href="'. $flickr_url .'" class="flickr" target="_blank">'. $flickr_title .'</a></li>'; }
 		if($dribbble_title == ' ') { echo ''; } else {  echo  '<li class="widget_sociallinks"><a href="'. $dribbble_url .'" class="dribbble" target="_blank">'. $dribbble_title .'</a></li>'; }
 		if($github_title == ' ') { echo ''; } else {  echo  '<li class="widget_sociallinks"><a href="'. $github_url .'" class="github" target="_blank">'. $github_title .'</a></li>'; }
-		if($wordpress_title == ' ') { echo ''; } else {  echo  '<li class="widget_sociallinks"><a href="'. $wordpress_url .'" class="wordpress" target="_blank">'. $wordpress_title .'</a></li>'; }
-		if($xing_title == ' ') { echo ''; } else {  echo  '<li class="widget_sociallinks"><a href="'. $xing_url .'" class="xing" target="_blank">'. $xing_title .'</a></li>'; }
 		if($linkedin_title == ' ') { echo ''; } else {  echo  '<li class="widget_sociallinks"><a href="'. $linkedin_url .'" class="linkedin" target="_blank">'. $linkedin_title .'</a></li>'; }
-		if($rss_title == ' ') { echo ''; } else {  echo  '<li class="widget_sociallinks"><a href="'. $rss_url .'" class="rss" target="_blank">'. $rss_title .'</a></li>'; }
 		echo '</ul>';
 		echo $after_widget;
 
@@ -471,14 +462,8 @@ class Yoko_SocialLinks_Widget extends WP_Widget {
 		$instance['dribbble_url'] = strip_tags($new_instance['dribbble_url']);
 		$instance['github_title'] = strip_tags($new_instance['github_title']);
 		$instance['github_url'] = strip_tags($new_instance['github_url']);
-		$instance['wordpress_title'] = strip_tags($new_instance['wordpress_title']);
-		$instance['wordpress_url'] = strip_tags($new_instance['wordpress_url']);
-		$instance['xing_title'] = strip_tags($new_instance['xing_title']);
-		$instance['xing_url'] = strip_tags($new_instance['xing_url']);
 		$instance['linkedin_title'] = strip_tags($new_instance['linkedin_title']);
 		$instance['linkedin_url'] = strip_tags($new_instance['linkedin_url']);
-		$instance['rss_title'] = strip_tags($new_instance['rss_title']);
-		$instance['rss_url'] = strip_tags($new_instance['rss_url']);
 		return $instance;
 	}
 	function form($instance) {
@@ -503,14 +488,8 @@ class Yoko_SocialLinks_Widget extends WP_Widget {
 			'dribbble_url' => '',
 			'github_title' => '',
 			'github_url' => '',
-			'wordpress_title' => '',
-			'wordpress_url' => '',
-			'xing_title' => '',
-			'xing_url' => '',
 			'linkedin_title' => '',
 			'linkedin_url' => '',
-			'rss_title' => '',
-			'rss_url' => ''
 		) );
 		$title = strip_tags($instance['title']);
 		$twitter_title = strip_tags($instance['twitter_title']);
@@ -531,14 +510,8 @@ class Yoko_SocialLinks_Widget extends WP_Widget {
 		$dribbble_url = strip_tags($instance['dribbble_url']);
 		$github_title = strip_tags($instance['github_title']);
 		$github_url = strip_tags($instance['github_url']);
-		$wordpress_title = strip_tags($instance['wordpress_title']);
-		$wordpress_url = strip_tags($instance['wordpress_url']);
-		$xing_title = strip_tags($instance['xing_title']);
-		$xing_url = strip_tags($instance['xing_url']);
 		$linkedin_title = strip_tags($instance['linkedin_title']);
 		$linkedin_url = strip_tags($instance['linkedin_url']);
-		$rss_title = strip_tags($instance['rss_title']);
-		$rss_url = strip_tags($instance['rss_url']);
 ?>
 			<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e( 'Title:', 'yoko' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" /></label></p>
 			<p><label for="<?php echo $this->get_field_id('twitter_title'); ?>"><?php _e( 'Twitter Text:', 'yoko' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('twitter_title'); ?>" name="<?php echo $this->get_field_name('twitter_title'); ?>" type="text" value="<?php echo esc_attr($twitter_title); ?>" /></label></p>
@@ -562,17 +535,11 @@ class Yoko_SocialLinks_Widget extends WP_Widget {
 			<p><label for="<?php echo $this->get_field_id('github_title'); ?>"><?php _e( 'GitHub Text:', 'yoko' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('github_title'); ?>" name="<?php echo $this->get_field_name('github_title'); ?>" type="text" value="<?php echo esc_attr($github_title); ?>" /></label></p>
 			<p><label for="<?php echo $this->get_field_id('github_url'); ?>"><?php _e( 'GitHub URL:', 'yoko' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('github_url'); ?>" name="<?php echo $this->get_field_name('github_url'); ?>" type="text" value="<?php echo esc_attr($github_url); ?>" /></label></p>
 
-			<p><label for="<?php echo $this->get_field_id('wordpress_title'); ?>"><?php _e( 'WordPress Text:', 'yoko' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('wordpress_title'); ?>" name="<?php echo $this->get_field_name('wordpress_title'); ?>" type="text" value="<?php echo esc_attr($wordpress_title); ?>" /></label></p>
-			<p><label for="<?php echo $this->get_field_id('wordpress_url'); ?>"><?php _e( 'WordPress URL:', 'yoko' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('wordpress_url'); ?>" name="<?php echo $this->get_field_name('wordpress_url'); ?>" type="text" value="<?php echo esc_attr($wordpress_url); ?>" /></label></p>
-			<p><label for="<?php echo $this->get_field_id('xing_title'); ?>"><?php _e( 'Xing Text:', 'yoko' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('xing_title'); ?>" name="<?php echo $this->get_field_name('xing_title'); ?>" type="text" value="<?php echo esc_attr($xing_title); ?>" /></label></p>
-			<p><label for="<?php echo $this->get_field_id('xing_url'); ?>"><?php _e( 'Xing URL:', 'yoko' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('xing_url'); ?>" name="<?php echo $this->get_field_name('xing_url'); ?>" type="text" value="<?php echo esc_attr($xing_url); ?>" /></label></p>
 
 			<p><label for="<?php echo $this->get_field_id('linkedin_title'); ?>"><?php _e( 'LinkedIn Text:', 'yoko' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('linkedin_title'); ?>" name="<?php echo $this->get_field_name('linkedin_title'); ?>" type="text" value="<?php echo esc_attr($linkedin_title); ?>" /></label></p>
 			<p><label for="<?php echo $this->get_field_id('linkedin_url'); ?>"><?php _e( 'LinkedIn URL:', 'yoko' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('linkedin_url'); ?>" name="<?php echo $this->get_field_name('linkedin_url'); ?>" type="text" value="<?php echo esc_attr($linkedin_url); ?>" /></label></p>
 
-			<p><label for="<?php echo $this->get_field_id('rss_title'); ?>"><?php _e( 'RSS Text:', 'yoko' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('rss_title'); ?>" name="<?php echo $this->get_field_name('rss_title'); ?>" type="text" value="<?php echo esc_attr($rss_title); ?>" /></label></p>
 
-			<p><label for="<?php echo $this->get_field_id('rss_url'); ?>"><?php _e( 'RSS  URL:', 'yoko' ); ?> <input class="widefat" id="<?php echo $this->get_field_id('rss_url'); ?>" name="<?php echo $this->get_field_name('rss_url'); ?>" type="text" value="<?php echo esc_attr($rss_url); ?>" /></label></p>
 
 <?php
 	}

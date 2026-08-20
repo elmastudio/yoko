@@ -6,6 +6,11 @@ For a detailed documentation and support please visit: http://www.elmastudio.de/
 Changelog:
 ------------------------------------------------------------------------------------------------------------
 
+Version 1.2.9 - 20th August 2026
+-----------------------------------
+- Remove the WordPress, RSS and Xing options from the Yoko Social Links widget.
+  The widget now covers ten social networks.
+
 Version 1.2.8 - 20th August 2026
 -----------------------------------
 - Remove the Delicious and Foursquare options from the Yoko Social Links widget.
