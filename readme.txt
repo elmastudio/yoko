@@ -6,6 +6,10 @@ For a detailed documentation and support please visit: http://www.elmastudio.de/
 Changelog:
 ------------------------------------------------------------------------------------------------------------
 
+Version 1.2.7 - 20th August 2026
+-----------------------------------
+- Remove the Google+ option from the Yoko Social Links widget. Google+ shut down in April 2019.
+
 Version 1.2.6 - 20th August 2026
 -----------------------------------
 - Bugfix: Restore the Yoko Social Links widget, which was dropped in 1.2.5.
