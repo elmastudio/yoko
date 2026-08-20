@@ -6,6 +6,19 @@ For a detailed documentation and support please visit: http://www.elmastudio.de/
 Changelog:
 ------------------------------------------------------------------------------------------------------------
 
+Version 1.2.6 - 20th August 2026
+-----------------------------------
+- Bugfix: Restore the Yoko Social Links widget, which was dropped in 1.2.5.
+- Bugfix: Register the widget with a closure instead of create_function(), which PHP 8 removed.
+
+Version 1.2.5 - 18th October 2019
+-----------------------------------
+- Bugfix: Update function.php for PHP 7+ compatibility.
+
+Version 1.2.4 - 18th October 2018
+-----------------------------------
+- Bugfix: Featured header image fix (header.php).
+
 Version 1.2.3 - 02th October 2018
 -----------------------------------
 - Enhancement: Update code to delete default image gallery styles

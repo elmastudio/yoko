@@ -1,7 +1,10 @@
 <?php
 /**
- * @package WordPress
- * @subpackage Yoko
+ * Yoko functions and definitions
+ *
+ * @link https://developer.wordpress.org/themes/basics/theme-functions/
+ *
+ * @package Yoko
  */
 
 /**
@@ -24,7 +27,7 @@ add_action( 'after_setup_theme', 'yoko' );
 if ( ! function_exists( 'yoko' ) ):
 
 /**
- * Returns the Google font stylesheet URL if available.
+* Returns the Google font stylesheet URL if available.
  */
 
 function yoko_fonts_url() {
@@ -333,7 +336,6 @@ function yoko_remove_recent_comments_style() {
 }
 add_action( 'widgets_init', 'yoko_remove_recent_comments_style' );
 
-
 /**
  * Search form custom styling
  */
@@ -395,7 +397,10 @@ class Yoko_SocialLinks_Widget extends WP_Widget {
 	}
 
 	function widget($args, $instance) {
-		extract($args, EXTR_SKIP);
+		$before_widget = $args['before_widget'];
+		$after_widget  = $args['after_widget'];
+		$before_title  = $args['before_title'];
+		$after_title   = $args['after_title'];
 		echo $before_widget;
 		$title = empty($instance['title']) ? ' ' : apply_filters('widget_title', $instance['title']);
 
@@ -605,5 +610,7 @@ $googleplus_title = empty($instance['googleplus_title']) ? ' ' : apply_filters('
 <?php
 	}
 }
-// register Yoko SocialLinks Widget
-add_action('widgets_init', create_function('', 'return register_widget("Yoko_SocialLinks_Widget");'));
+
+add_action( 'widgets_init', function() {
+	register_widget( 'Yoko_SocialLinks_Widget' );
+} );
