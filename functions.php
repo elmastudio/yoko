@@ -397,6 +397,7 @@ class Yoko_SocialLinks_Widget extends WP_Widget {
 	}
 
 	function widget($args, $instance) {
+		/* __php8_keys */ $instance = wp_parse_args( (array) $instance, array( 'title' => null, 'twitter_title' => null, 'twitter_url' => null, 'fb_title' => null, 'fb_url' => null, 'pinterest_title' => null, 'pinterest_url' => null, 'vimeo_title' => null, 'vimeo_url' => null, 'youtube_title' => null, 'youtube_url' => null, 'instagram_title' => null, 'instagram_url' => null, 'flickr_title' => null, 'flickr_url' => null, 'dribbble_title' => null, 'dribbble_url' => null, 'github_title' => null, 'github_url' => null, 'linkedin_title' => null, 'linkedin_url' => null ) );
 		$before_widget = $args['before_widget'];
 		$after_widget  = $args['after_widget'];
 		$before_title  = $args['before_title'];
@@ -467,6 +468,7 @@ class Yoko_SocialLinks_Widget extends WP_Widget {
 		return $instance;
 	}
 	function form($instance) {
+		/* __php8_keys */ $instance = wp_parse_args( (array) $instance, array( 'title' => '', 'twitter_title' => '', 'twitter_url' => '', 'fb_title' => '', 'fb_url' => '', 'pinterest_title' => '', 'pinterest_url' => '', 'vimeo_title' => '', 'vimeo_url' => '', 'youtube_title' => '', 'youtube_url' => '', 'instagram_title' => '', 'instagram_url' => '', 'flickr_title' => '', 'flickr_url' => '', 'dribbble_title' => '', 'dribbble_url' => '', 'github_title' => '', 'github_url' => '', 'linkedin_title' => '', 'linkedin_url' => '' ) );
 		$instance = wp_parse_args(
 		(array) $instance, array(
 			'title' => '',
