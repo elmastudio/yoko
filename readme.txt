@@ -119,3 +119,9 @@ Version 1.0.1 - 27th April 2011
 Version 1.0 - 26th April 2011
 --------------------------------
 Yoko release date.
+
+Changelog:
+
+Version 1.2.10 (25/08/2026)
+-----------------------------------------------------------------------------------------------------------------------------
+- Fix: PHP 8 compatibility. Theme options and widget settings no longer trigger warnings; attachment pages, related posts and comment display fixed where affected.
