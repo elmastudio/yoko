@@ -6,6 +6,14 @@ For a detailed documentation and support please visit: http://www.elmastudio.de/
 Changelog:
 ------------------------------------------------------------------------------------------------------------
 
+Version 1.2.11 - 4th September 2026
+-----------------------------------
+- Fix: Comments were not displayed since WordPress 5.5 changed the comment type from an empty string to "comment". Thanks to the contributors who reported and fixed this on GitHub.
+
+Version 1.2.10 (25/08/2026)
+-----------------------------------
+- Fix: PHP 8 compatibility. Theme options and widget settings no longer trigger warnings; attachment pages, related posts and comment display fixed where affected.
+
 Version 1.2.9 - 20th August 2026
 -----------------------------------
 - Remove the WordPress, RSS and Xing options from the Yoko Social Links widget.
@@ -119,9 +127,3 @@ Version 1.0.1 - 27th April 2011
 Version 1.0 - 26th April 2011
 --------------------------------
 Yoko release date.
-
-Changelog:
-
-Version 1.2.10 (25/08/2026)
------------------------------------------------------------------------------------------------------------------------------
-- Fix: PHP 8 compatibility. Theme options and widget settings no longer trigger warnings; attachment pages, related posts and comment display fixed where affected.
