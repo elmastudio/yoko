@@ -326,7 +326,7 @@ function yoko_widgets_init() {
 		'after_title' => '</h3>',
 	) );
 }
-add_action( 'init', 'yoko_widgets_init' );
+add_action( 'widgets_init', 'yoko_widgets_init' );
 
 /**
  * Removes the default styles that are packaged with the Recent Comments widget.

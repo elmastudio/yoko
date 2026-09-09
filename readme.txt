@@ -9,6 +9,10 @@ Install the Git Updater plugin (https://git-updater.com/) and WordPress will off
 Changelog:
 ------------------------------------------------------------------------------------------------------------
 
+Version 1.2.12 (09/09/2026)
+-----------------------------------
+- Fix: Sidebars and widgets are now registered on the widgets_init hook. WordPress 6.7 and newer no longer report that the theme loads its translations too early.
+
 Version 1.2.11 - 4th September 2026
 -----------------------------------
 - Fix: Comments were not displayed since WordPress 5.5 changed the comment type from an empty string to "comment". Thanks to the contributors who reported and fixed this on GitHub.
